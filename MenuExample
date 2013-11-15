@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<html>
+<head>
+<style type="text/css">
+
+#menu {
+  width:676px;
+  height:22px;
+  margin:2px auto 2px auto;
+  list-style:none;
+  display:block;
+  padding:4px 20px 4px 20px;
+  background: #f29c55;
+  /*gradients*/
+  background: -moz-linear-gradient(top, #f29c55, #FFC08C);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f29c55), to(#FFC08C));
+  background-image: linear-gradient(to bottom, #f29c55 0%, #FFC08C 100%);
+  background-image: -o-linear-gradient(top bottom, #f29c55 0%, #FFC08C 100%);
+  border: 1px solid #111111;
+  /*shadows*/
+  -moz-box-shadow:0px 0px 15px #222222;
+  -webkit-box-shadow:0px 0px 15px #222222;
+  box-shadow:0px 0px 15px #222222;
+  /* Rounded corners */
+  -moz-border-radius: 4px 4px 4px 4px; 
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+#menu li {
+  float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-size:14px;
+	color:#000000;
+	padding: 0px 10px 1px 10px;
+	margin: 1px 2px 1px 2px;
+	text-shadow: 0px 1px 1px #aaaaaa;
+	border:1px solid #777777;
+	/* Rounded corners */
+	-moz-border-radius: 4px 4px 4px 4px; 
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+  display:block;
+  opacity:0.9;
+  z-index:2;
+}
+#menu li:hover {
+  background: #336633;
+  border-top:1px solid #000000;
+  border-left:1px solid #000000;
+  border-right:1px solid #000000;
+  /* Rounded corners */
+  -moz-border-radius: 4px 4px 0px 0px; 
+  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+  opacity:1;
+  -webkit-transition: all 0.50s ease;
+  -moz-transition: all 0.50s ease;
+  -ms-transition: all 0.50s ease;
+  -o-transition: all 0.50s ease;
+  transition: all 0.50s ease;
+}
+#menu li a {
+  text-decoration:none;	
+  color:#000000;
+  display:block;
+  outline:0;
+}
+#menu li:hover a
+{
+  color:#ffffff;
+}
+#menu li div {
+  text-align:left;
+}
+#menu li:hover div div a
+{
+  color:#000000;
+	padding:3px 3px 3px 3px;
+	 
+}
+
+#menu li:hover div div a:hover
+{
+	background:#336633;
+	color:#ffffff;
+	
+}
+
+#menu li:hover div div
+{
+  background:#eeeeee;
+	/* Gradient background */
+	background: -moz-linear-gradient(top, #cccccc, #eeeeee);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cccccc), to(#eeeeee));
+	background-image: linear-gradient(to bottom, #cccccc 0%, #eeeeee 100%);
+	background-image: -o-linear-gradient(top bottom, #cccccc 0%, #eeeeee 100%);
+}
+#menu li:hover div .columnSize, #menu li:hover div .columnSizeTop
+{
+background:#F2B685;
+/*gradients*/
+  background: -moz-linear-gradient(top, #F2B685, #FFCEA6);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F2B685), to(#FFCEA6));
+  background-image: linear-gradient(to bottom, #F2B685 0%, #FFCEA6 100%);
+  background-image: -o-linear-gradient(top bottom, #F2B685 0%, #FFCEA6 100%);
+}
+#menu li:hover .dropdown
+{
+  left:auto;
+	top:auto;
+	/* Rounded corners */
+	-moz-border-radius: 0px 4px 4px 4px; 
+  -webkit-border-radius: 0px 4px 4px 4px;
+  border-radius: 0px 4px 4px 4px;
+  opacity:1;
+  visibility:visible;
+  -webkit-transition: all 0.50s ease;
+  -moz-transition: all 0.50s ease;
+  -ms-transition: all 0.50s ease;
+  -o-transition: all 0.50s ease;
+  transition: all 0.50s ease;
+  -moz-box-shadow:0px 0px 15px #666666;
+  -webkit-box-shadow:0px 0px 15px #666666;
+  box-shadow:0px 0px 15px #666666;
+}
+#menu li .dropdown {
+  position:absolute;
+  background:#a64b00;
+  font-size:14px;
+  margin:auto;
+  float:left;
+  border:1px solid #111111;
+  padding:0px 0px 0px 0px;
+  margin: 2px 0px 0px -11px;
+  /*gradients*/
+  background: -moz-linear-gradient(top, #bf7130, #a64b00);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bf7130), to(#a64b00));
+	background-image: linear-gradient(to bottom, #bf7130 0%, #a64b00 100%);
+	background-image: -o-linear-gradient(top bottom, #bf7130 0%, #a64b00 100%);
+  opacity:0;
+  z-index:4;
+  visibility:hidden;
+}
+#menu li div .columnSize
+{
+  width:130px;
+  padding:1px 1px 1px 1px;
+  border:2px solid #000000;
+  border-top:none;
+} 
+#menu li div .columnSizeTop
+{
+  width:130px;
+  padding:1px 1px 1px 1px;
+  border:2px solid #000000;
+} 
+#menu li div .info0, #menu li div .info1, #menu li div .info2, #menu li div .info3, #menu li div .info4
+{
+  width:230px;
+  height:200px;
+  vertical-align:top;
+  padding:5px 5px 5px 5px;
+  line-height:18px;
+  font-size:12px;
+  text-shadow: 0px 1px 1px #FEFEFE;
+  border:1px solid #333333;
+}
+#menu li div .info0 p a, #menu li div .info1 p a, #menu li div .info2 p a, #menu li div .info3 p a, #menu li div .info4 p a
+{
+  color:#111111;
+  font-size:11px;
+}
+#menu li div .info0 p a:hover, #menu li div .info1 p a:hover, #menu li div .info2 p a:hover, #menu li div .info3 p a:hover, #menu li div .info4 p a:hover
+{
+  list-style:none;
+  color:#222222;
+  background-color: transparent; 
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+#menu li div .info0 h2, #menu li div .info1 h2, #menu li div .info2 h2, #menu li div .info3 h2, #menu li div .info4 h2
+{
+ 	font-size:16px;
+	margin:1px 0 1px 0;
+	text-shadow: 0px 1px 1px #aaaaaa;
+	padding-bottom:3px;
+	border-bottom:1px solid #666666;
+}
+#menu li div .info0, #menu li div .info1, #menu li div .info2
+{
+ 	height:370px;
+}
+#menu li div div p{
+  text-indent: 8px;
+}
+#menu li div .info0 .imgshadow, #menu li div .info1 .imgshadow, #menu li div .info2 .imgshadow, #menu li div .info3 .imgshadow, #menu li div .info4 .imgshadow
+{ /* Better style on light background */
+	background:#cccccc;
+	padding:4px;
+	width:88px;
+	height:88px;
+	border:1px solid #111111;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:5px;
+	-moz-box-shadow:0px 0px 5px #666666;
+	-webkit-box-shadow:0px 0px 5px #666666;
+	box-shadow:0px 0px 5px #666666;
+	float:right;
+}
+
+.AllDivs
+{
+  visibility:hidden;
+}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+var rememberLastLink=10;
+
+$(document).ready(function(){
+	
+$("#menu li div table tr td div[class*='columnSize']").mouseenter(function(){
+	$("#"+rememberLastLink+" a").css({"background-color":"transparent", "color":"#000000"});
+	var idBox=$(this).attr('id');
+	var infoBox = String(idBox).charAt(1);
+	$("#infoBox"+infoBox).html($("#div"+idBox).html());
+  $("#"+idBox+" a").css({"background-color":"#336633", "color":"#ffffff"});
+	rememberLastLink=idBox;
+});
+	
+$("#menu li div table tr td div[class*='columnSize']").mouseleave(function(){
+  $("#"+rememberLastLink+" a").css({"background-color":"#336633", "color":"#ffffff"});
+});
+
+$("#menu li").mouseenter(function(){
+  $("#"+rememberLastLink+" a").css({"background-color":"transparent", "color":"#000000"});
+	var idBox=$(this).attr('id');
+	$("#infoBox"+idBox).html($("#div1"+idBox).html());
+  $("#1"+idBox+" a").css({"background-color":"#336633", "color":"#ffffff"});
+});
+
+});
+</script>
+<title>Test</title>
+
+</head>
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+    <ul id="menu">  
+        <li id="0"><a href="#">Home</a>
+				<div class="dropdown">
+				<table border="0">
+        <tr>
+        <td valign="top">
+				<div class="columnSizeTop" id="10"> <a href="http://www.google.ca">Menu One One</a></div>
+				<div class="columnSize" id="20">  <a href="www.google.ca">Menu One Two</a></div>
+				<div class="columnSize" id="30">  <a href="www.google.ca">Menu One Three</a></div>
+				<div class="columnSize" id="40">  <a href="www.google.ca">Menu One Four</a></div>
+				</td>
+				<td><div class="info0" id="infoBox0"></div>
+				</td>
+        </tr>
+        </table>
+				</div>
+			  </li>  
+        
+				<li id="1"><a href="#">About</a> 
+				<div class="dropdown">
+				<table border="0">
+        <tr>
+        <td valign="top">
+				<div class="columnSizeTop" id="11"> <a href="www.google.ca">Menu Two One</a></div>
+				<div class="columnSize" id="21"> <a href="http://www.google.ca">Menu Two Two</a></div>
+				<div class="columnSize" id="31">  <a href="www.google.ca">Menu Two Three</a></div>
+				<div class="columnSize" id="41">  <a href="www.google.ca">Menu Two Four</a></div>
+				<div class="columnSize" id="51">  <a href="www.google.ca">Menu Two Five</a></div>
+				</td>
+				<td><div class="info1" id="infoBox1"></div>
+				</td>
+        </tr>
+        </table>
+				</div> 
+				</li>
+       
+			  <li id="2"><a href="#">Services</a>
+				<div class="dropdown">
+				<table border="0">
+        <tr>
+        <td valign="top">
+				<div class="columnSizeTop" id="12"> <a href="www.google.ca">Menu Three One</a></div>
+				<div class="columnSize" id="22"> <a href="www.google.ca">Menu Three Two</a></div>
+				<div class="columnSize" id="32">  <a href="www.google.ca">Menu Three Three</a></div>
+				<div class="columnSize" id="42">  <a href="www.google.ca">Menu Three Four</a></div>
+				<div class="columnSize" id="52">  <a href="www.google.ca">Menu Three Five</a></div>
+				</td>
+				<td><div class="info2" id="infoBox2"></div>
+				</td>
+        </tr>
+        </table>
+				</div>
+				</li> 
+				 
+        <li id="3"><a href="#">Portfolio</a> 
+				<div class="dropdown">
+				<table border="0">
+        <tr>
+        <td valign="top">
+				<div class="columnSizeTop" id="13"> <a href="www.google.ca">Menu Four One</a></div>
+				<div class="columnSize" id="23">  <a href="www.google.ca">Menu Four Two</a></div>
+				</td>
+				<td><div class="info3" id="infoBox3"></div>
+				</td>
+        </tr>
+        </table>
+				</div>
+				</li>
+				
+        <li id="4"><a href="#">Contact</a>  
+				<div class="dropdown">
+				<table border="0">
+        <tr>
+        <td valign="top">
+				<div class="columnSizeTop" id="14"> <a href="www.google.ca">Menu Five One</a></div>
+				<div class="columnSize" id="24">  <a href="www.google.ca">Menu Five Two</a></div>
+				</td>
+				<td><div class="info4" id="infoBox4"></div>
+				</td>
+        </tr>
+        </table>
+				</div></li>
+    </ul>  
+</td>
+</tr>
+</table>
+
+<div class="AllDivs">
+
+<div id="div10"><h2>Title One One</h2><img src="img/turtle__01.jpg" class="imgshadow">
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p>
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div20"><h2>Title One Two</h2><img src="img/turtle__02.jpg" class="imgshadow">
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p>
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div30"><h2>Title One Three</h2><img src="img/turtle__03.jpg" class="imgshadow">
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p>
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div40"><h2>Title One Four</h2><img src="img/turtle__04.jpg" class="imgshadow">
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.<a href="http://www.google.ca">Click here for more.</a><a href="http://www.google.ca">Click here for more.</a></p>
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+you can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p></div>
+
+<div id="div11"><h2>Title Two One</h2><img src="img/turtle__01.jpg" class="imgshadow">
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p>
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.<a href="http://www.google.ca">Click here for more.</a><a href="http://www.google.ca">Click here for more.</a></p></div>
+<div id="div21"><h2>Title Two Two</h2><img src="img/turtle__04.jpg" class="imgshadow">
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p><p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows. If you want to get more information on this please click on the menu item.</p></div>
+<div id="div31"><h2>Title Two Three</h2><img src="img/turtle__03.jpg" class="imgshadow">
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p>
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div41"><h2>Title Two Four</h2><img src="img/turtle__06.jpg" class="imgshadow">
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p><p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div51"><h2>Title Two Five</h2><img src="img/turtle__05.jpg" class="imgshadow">
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.<a href="http://www.google.ca">Click here for more.</a><a href="http://www.google.ca">Click here for more.</a></p>
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p></div>
+
+
+<div id="div12"><h2>Title Three One</h2><img src="img/turtle__04.jpg" class="imgshadow">
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.<a href="http://www.google.ca">Click here for more.</a><a href="http://www.google.ca">Click here for more.</a></p><p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div22"><h2>Title Three Two</h2><img src="img/turtle__06.jpg" class="imgshadow">
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows. If you want to get more information on this please click on the menu item.</p><p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div32"><h2>Title Three Three</h2><img src="img/turtle__05.jpg" class="imgshadow">
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p><p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div42"><h2>Title Three Four</h2><img src="img/turtle__08.jpg" class="imgshadow">
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p><p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.<a href="http://www.google.ca">Click here for more.</a><a href="http://www.google.ca">Click here for more.</a></p></div>
+<div id="div52"><h2>Title Three Five</h2><img src="img/turtle__07.jpg" class="imgshadow">
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p><p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p></div>
+
+<div id="div13"><h2>Title Four One</h2><img src="img/turtle__07.jpg" class="imgshadow">
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div23"><h2>Title Four Two</h2><img src="img/turtle__09.jpg" class="imgshadow">
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p></div>
+
+
+<div id="div14"><h2>Title Five One</h2><img src="img/turtle__09.jpg" class="imgshadow">
+<p>The interior also has large expanses of space in the meeting rooms and hallways.
+You can see many small animals in through the windows.
+If you want to get more information on this please click on the menu item.</p></div>
+<div id="div24"><h2>Title Five Two</h2><img src="img/turtle__08.jpg" class="imgshadow">
+<p>The interior view of the sleeping rooms is always unimpeded by walls and small windows.
+If you want to get more information on this please click on the menu item.</p></div>
+
+</div>
+</body>
+</html>
